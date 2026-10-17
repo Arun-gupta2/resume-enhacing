@@ -1,0 +1,55 @@
+.resumePage { width: 100%; min-height: 900px; padding: 42px 44px; background: #fff; color: #1e2922; font-family: Georgia, "Times New Roman", serif; font-size: 12px; line-height: 1.48; box-shadow: 0 8px 28px rgb(24 38 28 / 10%); }
+.resumeHeader { padding-bottom: 17px; border-bottom: 1px solid #cfd8ce; }
+.resumeHeader h1 { overflow-wrap: anywhere; font-size: 30px; font-weight: 500; line-height: 1.08; }
+.resumeHeader > p { margin-top: 6px; color: #4d6653; font-family: Arial, sans-serif; font-size: 10px; font-weight: 700; }
+.contactList { display: flex; flex-wrap: wrap; gap: 3px 12px; padding: 0; margin: 12px 0 0; color: #526056; font-family: Arial, sans-serif; font-size: 9px; list-style: none; overflow-wrap: anywhere; }
+.resumeSection { margin-top: 21px; break-inside: avoid; }
+.resumeSection > h2 { padding-bottom: 5px; margin-bottom: 10px; border-bottom: 1px solid #dce2db; color: #386147; font-family: Arial, sans-serif; font-size: 9px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.summary { white-space: pre-wrap; }
+.entry { margin-top: 12px; break-inside: avoid; }
+.entry:first-of-type { margin-top: 0; }
+.entryHeading { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.entryHeading h3 { font-size: 12px; font-weight: 700; }
+.entryHeading p { margin-top: 2px; color: #536057; font-family: Arial, sans-serif; font-size: 9px; }
+.entryHeading > span { flex: 0 0 auto; color: #69766c; font-family: Arial, sans-serif; font-size: 8px; }
+.bullets { display: grid; gap: 3px; padding-left: 15px; margin-top: 6px; }
+.bullets li { padding-left: 1px; }
+.simpleList { display: grid; gap: 5px; padding: 0; list-style: none; }
+.simpleList li { display: flex; flex-wrap: wrap; gap: 3px 10px; }
+.simpleList strong { font-weight: 700; }
+.additionalItem { white-space: pre-wrap; }
+.skills { display: flex; flex-wrap: wrap; gap: 5px 12px; padding: 0; margin: 0; list-style: none; }
+.projectUrl { margin-top: 4px; color: #526056; font-family: Arial, sans-serif; font-size: 9px; overflow-wrap: anywhere; }
+.blankMessage { margin-top: 33px; color: #79837b; font-family: Arial, sans-serif; font-size: 12px; text-align: center; }
+.modern { min-height: 900px; padding: 42px 44px; font-family: Arial, sans-serif; font-size: 11px; }
+.modern .resumeHeader { padding: 19px 0; border-top: 5px solid #376147; border-bottom: 1px solid #c7d6c9; }
+.modern .resumeHeader h1 { color: #224b3a; font-family: Arial, sans-serif; font-size: 29px; font-weight: 700; }
+.modern .resumeHeader > p { color: #68776d; font-size: 10px; font-weight: 400; }
+.modern .resumeSection > h2 { padding-left: 8px; border-bottom: 0; border-left: 3px solid #729579; color: #224b3a; }
+.compact { min-height: 900px; padding: 34px 40px; font-family: Arial, sans-serif; font-size: 10px; line-height: 1.35; }
+.compact .resumeHeader { padding-bottom: 12px; text-align: center; }
+.compact .resumeHeader h1 { font-family: Arial, sans-serif; font-size: 25px; font-weight: 700; }
+.compact .resumeHeader > p { color: #4b554d; }
+.compact .contactList { justify-content: center; font-size: 8px; }
+.compact .resumeSection { margin-top: 13px; }
+.compact .resumeSection > h2 { padding-bottom: 3px; margin-bottom: 6px; border-bottom: 1px solid #56665b; color: #26352b; font-size: 8px; letter-spacing: .04em; }
+.compact .entry { margin-top: 7px; }
+.compact .entryHeading h3 { font-size: 10px; }
+.compact .entryHeading p,.compact .entryHeading > span { font-size: 8px; }
+.compact .bullets { gap: 1px; margin-top: 3px; }
+.compact .skills { gap: 3px 10px; }
+
+@page { size: letter; margin: .55in; }
+
+@media (max-width: 760px) {
+  .resumePage { min-height: auto; padding: 27px 22px; }
+  .modern { padding: 0; }
+  .modern { padding: 27px 22px; }
+}
+
+@media print {
+  .resumePage,.modern,.compact { min-height: 0; padding: 0; box-shadow: none; }
+  .resumePage { width: 100%; color: #111; font-size: 10pt; }
+  .modern .resumeHeader { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .resumeSection,.entry { break-inside: avoid; }
+}

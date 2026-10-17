@@ -1,0 +1,43 @@
+.resultPage { display: grid; gap: 27px; }
+.headingActions { display: flex; flex-wrap: wrap; align-items: center; gap: 13px; }
+.headingActions .button { min-height: 39px; padding-inline: 12px; font-size: 11px; }
+.scoreSection { display: grid; grid-template-columns: 195px minmax(0,1fr); gap: 27px; padding: 22px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.scoreMain { align-content: start; }
+.scoreOverline { color: #506057; font-size: 11px; font-weight: 650; }
+.scoreNumber { margin-top: 8px; color: var(--green-dark); font-family: var(--serif); font-size: 58px; line-height: 1; }
+.scoreNumber span { margin-left: 4px; color: #758077; font-family: var(--sans); font-size: 13px; }
+.scoreMain > p { max-width: 160px; margin-top: 9px; color: var(--muted); font-size: 10px; }
+.componentList { display: grid; align-content: center; gap: 15px; }
+.componentTop { display: flex; justify-content: space-between; gap: 12px; }
+.componentTop h2 { font-size: 11px; font-weight: 650; }
+.componentTop > span { color: #4f5e53; font-size: 10px; }
+.progressTrack { height: 5px; overflow: hidden; margin-top: 6px; background: #e5e9e2; }
+.progressTrack span { display: block; height: 100%; background: #4f8060; }
+.component > p { margin-top: 4px; color: var(--muted); font-size: 10px; }
+.disclaimer { padding: 11px 14px; border-left: 2px solid #80946b; background: #eef1e6; color: #58634e; font-size: 11px; }
+.findingsGrid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 22px; }
+.findingsSection { min-width: 0; padding-top: 14px; border-top: 1px solid var(--line); }
+.sectionHeading { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+.sectionHeading h2 { font-family: var(--serif); font-size: 21px; font-weight: 400; }
+.sectionHeading > span { color: var(--muted); font-size: 10px; }
+.requirementList,.riskList,.recommendationList { display: grid; padding: 0; list-style: none; }
+.requirementList > li { padding: 12px 0; border-bottom: 1px solid #e5e8e2; }
+.requirementTop { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.requirementTop strong,.riskList strong,.recommendationList strong { font-size: 12px; font-weight: 650; }
+.priority { flex: 0 0 auto; color: #69766b; font-size: 9px; text-transform: capitalize; }
+.priority.required { color: #8a3c34; font-weight: 700; }
+.termSource { margin-top: 4px; color: #707a72; font-size: 10px; }
+.requirementList blockquote { padding-left: 9px; margin-top: 6px; border-left: 2px solid #c7d5c3; color: #37483c; font-size: 11px; }
+.requirementList li > p:last-child:not(.termSource) { margin-top: 6px; color: var(--muted); font-size: 10px; }
+.emptyFinding { padding: 11px 0; color: var(--muted); font-size: 11px; }
+.riskList > li { display: flex; align-items: flex-start; gap: 11px; padding: 11px 0; border-bottom: 1px solid #e5e8e2; }
+.riskSeverity { min-width: 48px; padding: 3px 6px; border: 1px solid var(--line); color: #58665c; font-size: 9px; text-align: center; text-transform: capitalize; }
+.severity-high { border-color: #dfb9b4; background: #fbefec; color: #8a3029; }
+.severity-medium { border-color: #dfd0a9; background: #f8f3e6; color: #765f26; }
+.riskList p,.recommendationList p { margin-top: 4px; color: var(--muted); font-size: 10px; }
+.recommendationList { counter-reset: recommendations; }
+.recommendationList > li { display: flex; gap: 13px; padding: 11px 0; border-bottom: 1px solid #e5e8e2; }
+.recommendationList > li > span { color: #81907f; font-family: var(--serif); font-size: 17px; }
+.resultsAiSlot { display: block; }
+
+@media (max-width: 760px) { .scoreSection { grid-template-columns: 1fr; gap: 20px; } .scoreMain > p { max-width: none; } .findingsGrid { grid-template-columns: 1fr; } .headingActions { align-items: flex-start; } }

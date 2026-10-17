@@ -1,0 +1,288 @@
+.pickerWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.modeSwitch {
+  display: flex;
+  gap: 12px;
+  background: #f1f3ed;
+  padding: 6px;
+  border-radius: 12px;
+  border: 1px solid #dbe2d8;
+}
+
+.modeButton {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  color: #3b463e;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.modeButtonActive {
+  background: #ffffff;
+  color: #174d39;
+  box-shadow: 0 2px 8px rgba(23, 77, 57, 0.08);
+}
+
+.modeUploadLink {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  background: transparent;
+  color: #556358;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.modeUploadLink:hover {
+  background: #ffffff;
+  color: #174d39;
+}
+
+.archetypeHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.archetypeHeader h2 {
+  font-size: 18px;
+  color: #1a271f;
+  font-weight: 650;
+}
+
+.archetypeHeader p {
+  color: #5d6d62;
+  font-size: 13px;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.typeCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #ffffff;
+  border: 2px solid #e1e7de;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  text-align: left;
+}
+
+.typeCard:hover {
+  border-color: #729579;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(28, 104, 75, 0.08);
+}
+
+.typeCardSelected {
+  border-color: #1c684b;
+  background: #fbfdfb;
+  box-shadow: 0 6px 24px rgba(28, 104, 75, 0.12);
+}
+
+.badge {
+  align-self: flex-start;
+  padding: 3px 8px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 20px;
+  background: #eef5f0;
+  color: #1c684b;
+  margin-bottom: 12px;
+}
+
+.miniVisual {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px;
+  background: #f7f9f6;
+  border: 1px solid #e5ebe2;
+  border-radius: 8px;
+  margin-bottom: 14px;
+}
+
+.visualHeader {
+  height: 6px;
+  width: 45%;
+  background: #1c684b;
+  border-radius: 2px;
+}
+
+.visualSub {
+  height: 4px;
+  width: 70%;
+  background: #cfd8ce;
+  border-radius: 2px;
+  margin-bottom: 4px;
+}
+
+.visualLine {
+  height: 3px;
+  width: 100%;
+  background: #e1e7de;
+  border-radius: 2px;
+}
+
+.visualShort {
+  width: 60%;
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #172a1e;
+  margin-bottom: 4px;
+}
+
+.cardDesc {
+  font-size: 12px;
+  line-height: 1.45;
+  color: #556358;
+  margin-bottom: 12px;
+  flex: 1;
+}
+
+.cardBestFor {
+  font-size: 11px;
+  font-weight: 600;
+  color: #3b5243;
+  padding-top: 8px;
+  border-top: 1px dashed #e1e7de;
+}
+
+.cardBestFor span {
+  font-weight: 400;
+  color: #6d7a70;
+}
+
+.formBox {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 14px;
+  border: 1px solid #dce4d9;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inputGroup label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1d2c22;
+}
+
+.titleInput {
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1px solid #cfd8cc;
+  border-radius: 8px;
+  outline: none;
+  background: #fbfdfa;
+  transition: border-color 0.2s;
+}
+
+.titleInput:focus {
+  border-color: #1c684b;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(28, 104, 75, 0.12);
+}
+
+.suggestChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  font-size: 12px;
+  color: #68776d;
+}
+
+.chipBtn {
+  padding: 4px 10px;
+  font-size: 11px;
+  border: 1px solid #d5dfd3;
+  border-radius: 16px;
+  background: #f5f8f4;
+  color: #274734;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.chipBtn:hover {
+  background: #e4eee3;
+  border-color: #729579;
+}
+
+.starterCheck {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  color: #3d4a40;
+  cursor: pointer;
+  user-select: none;
+}
+
+.starterCheck input {
+  margin-top: 2px;
+  accent-color: #1c684b;
+}
+
+.submitBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 8px;
+  padding-top: 16px;
+  border-top: 1px solid #e8ede5;
+}
+
+@media (max-width: 640px) {
+  .modeSwitch {
+    flex-direction: column;
+  }
+  .cardGrid {
+    grid-template-columns: 1fr;
+  }
+  .submitBar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

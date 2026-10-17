@@ -1,0 +1,429 @@
+{
+  "users": [
+    {
+      "id": "00000000-0000-0000-0000-000000000001",
+      "email": "alex.mercer@example.com",
+      "fullName": "Alex Mercer"
+    }
+  ],
+  "resumes": [
+    {
+      "id": "11111111-1111-1111-1111-111111111111",
+      "user_id": "00000000-0000-0000-0000-000000000001",
+      "title": "Senior Full Stack Engineer (Core)",
+      "status": "ready",
+      "template": "modern",
+      "client_revision": 1,
+      "current_version_id": "22222222-2222-2222-2222-222222222222",
+      "created_at": "2026-10-16T18:28:06.759Z",
+      "updated_at": "2026-10-16T18:28:06.759Z"
+    }
+  ],
+  "versions": [
+    {
+      "id": "22222222-2222-2222-2222-222222222222",
+      "resume_id": "11111111-1111-1111-1111-111111111111",
+      "user_id": "00000000-0000-0000-0000-000000000001",
+      "variant_id": null,
+      "version_number": 1,
+      "client_revision": 1,
+      "content": {
+        "contact": {
+          "fullName": "Alex Mercer",
+          "email": "alex.mercer@example.com",
+          "phone": "+1 (555) 342-8901",
+          "location": "San Francisco, CA",
+          "website": "https://alexmercer.dev",
+          "linkedIn": "https://linkedin.com/in/alexmercer-demo",
+          "portfolio": "https://github.com/alexmercer-demo"
+        },
+        "summary": "Full Stack Engineer with 6+ years of experience designing scalable web applications, distributed systems, and modern cloud architectures using React, Next.js, TypeScript, and Node.js. Track record of improving system latency by 35% and leading cross-functional engineering pods.",
+        "experience": [
+          {
+            "id": "exp-1",
+            "role": "Senior Full Stack Engineer",
+            "company": "Apex Cloud Technologies",
+            "location": "San Francisco, CA",
+            "startDate": "2022-03",
+            "endDate": "",
+            "current": true,
+            "bullets": [
+              "Architected high-throughput data processing services using TypeScript, Node.js, and PostgreSQL handling 2M+ daily requests.",
+              "Spearheaded redesign of flagship customer portal with Next.js and React, driving a 28% increase in conversion and 400ms reduction in LCP.",
+              "Integrated automated testing and CI/CD pipelines with GitHub Actions, reducing release cycle time by 45% across 5 teams.",
+              "Mentored 6 junior and mid-level engineers through code reviews, architectural RFCs, and engineering brown bags."
+            ]
+          },
+          {
+            "id": "exp-2",
+            "role": "Software Engineer",
+            "company": "Beacon Data Systems",
+            "location": "Austin, TX",
+            "startDate": "2019-06",
+            "endDate": "2022-02",
+            "current": false,
+            "bullets": [
+              "Developed resilient REST and GraphQL APIs using Node.js, Express, and Redis caching layer.",
+              "Implemented real-time analytics dashboard with React, Tailwind, and WebSockets, cutting reporting delay from 10 minutes to under 2 seconds.",
+              "Collaborated with product designers to standardize internal component library, improving feature velocity by 30%."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "id": "edu-1",
+            "school": "University of Texas at Austin",
+            "degree": "Bachelor of Science",
+            "field": "Computer Science",
+            "location": "Austin, TX",
+            "startDate": "2015-08",
+            "endDate": "2019-05",
+            "details": "Graduated with Honors. Coursework in Distributed Systems, Algorithms, and Cloud Infrastructure."
+          }
+        ],
+        "skills": [
+          "TypeScript",
+          "JavaScript",
+          "React",
+          "Next.js",
+          "Node.js",
+          "Python",
+          "PostgreSQL",
+          "Redis",
+          "Docker",
+          "Kubernetes",
+          "AWS",
+          "GraphQL",
+          "REST APIs",
+          "Git",
+          "CI/CD",
+          "Microservices"
+        ],
+        "projects": [
+          {
+            "id": "proj-1",
+            "name": "Distributed Task Orchestrator",
+            "role": "Creator & Maintainer",
+            "url": "https://github.com/alexmercer-demo/task-orchestrator",
+            "description": "Open-source distributed background job processor built in TypeScript with Redis pub/sub and zero external dependencies."
+          }
+        ],
+        "certifications": [
+          {
+            "id": "cert-1",
+            "name": "AWS Certified Solutions Architect – Associate",
+            "issuer": "Amazon Web Services",
+            "date": "2023-04",
+            "url": ""
+          }
+        ],
+        "additionalSections": []
+      },
+      "created_at": "2026-10-16T18:28:06.759Z"
+    }
+  ],
+  "variants": [],
+  "jobDescriptions": [
+    {
+      "id": "33333333-3333-3333-3333-333333333333",
+      "user_id": "00000000-0000-0000-0000-000000000001",
+      "resume_id": "11111111-1111-1111-1111-111111111111",
+      "title": "Lead Full Stack Engineer",
+      "company": "Stripe",
+      "description": "We are seeking an experienced Lead Full Stack Engineer to build world-class developer experiences. Required: 5+ years building distributed web applications with TypeScript, React, and Node.js. Experience with PostgreSQL, AWS, and modern CI/CD. Strong system design and leadership abilities.",
+      "created_at": "2026-10-16T18:28:06.759Z",
+      "updated_at": "2026-10-16T18:28:06.759Z"
+    }
+  ],
+  "analyses": [
+    {
+      "id": "44444444-4444-4444-4444-444444444444",
+      "user_id": "00000000-0000-0000-0000-000000000001",
+      "resume_id": "11111111-1111-1111-1111-111111111111",
+      "resume_version_id": "22222222-2222-2222-2222-222222222222",
+      "resume_variant_id": null,
+      "job_description_id": "33333333-3333-3333-3333-333333333333",
+      "score": 100,
+      "matched_terms": [
+        {
+          "id": "skill:typescript",
+          "label": "TypeScript",
+          "category": "skill",
+          "priority": "required",
+          "matched": true,
+          "jobEvidence": "Required: 5+ years building distributed web applications with TypeScript, React, and Node.js.",
+          "resumeEvidence": [
+            "Full Stack Engineer with 6+ years of experience designing scalable web applications, distributed systems, and modern cloud architectures using React, Next.js, TypeScript, and Node.js. Track record of improving system latency by 35% and lead",
+            "Architected high-throughput data processing services using TypeScript, Node.js, and PostgreSQL handling 2M+ daily requests."
+          ],
+          "explanation": "Found explicit resume evidence for typescript."
+        },
+        {
+          "id": "skill:react",
+          "label": "React",
+          "category": "skill",
+          "priority": "required",
+          "matched": true,
+          "jobEvidence": "Required: 5+ years building distributed web applications with TypeScript, React, and Node.js.",
+          "resumeEvidence": [
+            "Full Stack Engineer with 6+ years of experience designing scalable web applications, distributed systems, and modern cloud architectures using React, Next.js, TypeScript, and Node.js. Track record of improving system latency by 35% and lead",
+            "Spearheaded redesign of flagship customer portal with Next.js and React, driving a 28% increase in conversion and 400ms reduction in LCP."
+          ],
+          "explanation": "Found explicit resume evidence for react."
+        },
+        {
+          "id": "skill:nodejs",
+          "label": "Node.js",
+          "category": "skill",
+          "priority": "required",
+          "matched": true,
+          "jobEvidence": "Required: 5+ years building distributed web applications with TypeScript, React, and Node.js.",
+          "resumeEvidence": [
+            "Full Stack Engineer with 6+ years of experience designing scalable web applications, distributed systems, and modern cloud architectures using React, Next.js, TypeScript, and Node.js. Track record of improving system latency by 35% and lead",
+            "Architected high-throughput data processing services using TypeScript, Node.js, and PostgreSQL handling 2M+ daily requests."
+          ],
+          "explanation": "Found explicit resume evidence for node.js."
+        },
+        {
+          "id": "skill:postgresql",
+          "label": "PostgreSQL",
+          "category": "skill",
+          "priority": "unspecified",
+          "matched": true,
+          "jobEvidence": "Experience with PostgreSQL, AWS, and modern CI/CD.",
+          "resumeEvidence": [
+            "Architected high-throughput data processing services using TypeScript, Node.js, and PostgreSQL handling 2M+ daily requests.",
+            "PostgreSQL"
+          ],
+          "explanation": "Found explicit resume evidence for postgresql."
+        },
+        {
+          "id": "skill:aws",
+          "label": "AWS",
+          "category": "skill",
+          "priority": "unspecified",
+          "matched": true,
+          "jobEvidence": "Experience with PostgreSQL, AWS, and modern CI/CD.",
+          "resumeEvidence": [
+            "AWS",
+            "AWS Certified Solutions Architect – Associate Amazon Web Services"
+          ],
+          "explanation": "Found explicit resume evidence for aws."
+        },
+        {
+          "id": "skill:cicd",
+          "label": "CI/CD",
+          "category": "skill",
+          "priority": "unspecified",
+          "matched": true,
+          "jobEvidence": "Experience with PostgreSQL, AWS, and modern CI/CD.",
+          "resumeEvidence": [
+            "Integrated automated testing and CI/CD pipelines with GitHub Actions, reducing release cycle time by 45% across 5 teams.",
+            "CI/CD"
+          ],
+          "explanation": "Found explicit resume evidence for ci/cd."
+        },
+        {
+          "id": "experience:leadership",
+          "label": "Leadership",
+          "category": "experience",
+          "priority": "unspecified",
+          "matched": true,
+          "jobEvidence": "We are seeking an experienced Lead Full Stack Engineer to build world-class developer experiences.",
+          "resumeEvidence": [
+            "Mentored 6 junior and mid-level engineers through code reviews, architectural RFCs, and engineering brown bags."
+          ],
+          "explanation": "Found explicit resume evidence for leadership."
+        }
+      ],
+      "missing_terms": [],
+      "explanation": {
+        "disclaimer": "This deterministic compatibility estimate is based on visible text and structured fields. It is not an employer ATS result, an interview prediction, or a hiring decision.",
+        "components": {
+          "skills": {
+            "score": 100,
+            "weight": 40,
+            "explanation": "6 of 6 detected role skills have explicit resume evidence."
+          },
+          "qualifications": {
+            "score": null,
+            "weight": 25,
+            "explanation": "No supported qualification pattern was detected; this component is omitted from the normalized score."
+          },
+          "experienceSignals": {
+            "score": 100,
+            "weight": 20,
+            "explanation": "1 of 1 experience signals have explicit evidence."
+          },
+          "documentStructure": {
+            "score": 100,
+            "weight": 15,
+            "explanation": "0 detectable structure or parsing concerns found. This checks provided fields only; it cannot inspect employer systems."
+          }
+        },
+        "risks": []
+      },
+      "ats_report": {
+        "version": 1,
+        "overallScore": 100,
+        "components": {
+          "skills": {
+            "score": 100,
+            "weight": 40,
+            "explanation": "6 of 6 detected role skills have explicit resume evidence."
+          },
+          "qualifications": {
+            "score": null,
+            "weight": 25,
+            "explanation": "No supported qualification pattern was detected; this component is omitted from the normalized score."
+          },
+          "experienceSignals": {
+            "score": 100,
+            "weight": 20,
+            "explanation": "1 of 1 experience signals have explicit evidence."
+          },
+          "documentStructure": {
+            "score": 100,
+            "weight": 15,
+            "explanation": "0 detectable structure or parsing concerns found. This checks provided fields only; it cannot inspect employer systems."
+          }
+        },
+        "matchedTerms": [
+          {
+            "id": "skill:typescript",
+            "label": "TypeScript",
+            "category": "skill",
+            "priority": "required",
+            "matched": true,
+            "jobEvidence": "Required: 5+ years building distributed web applications with TypeScript, React, and Node.js.",
+            "resumeEvidence": [
+              "Full Stack Engineer with 6+ years of experience designing scalable web applications, distributed systems, and modern cloud architectures using React, Next.js, TypeScript, and Node.js. Track record of improving system latency by 35% and lead",
+              "Architected high-throughput data processing services using TypeScript, Node.js, and PostgreSQL handling 2M+ daily requests."
+            ],
+            "explanation": "Found explicit resume evidence for typescript."
+          },
+          {
+            "id": "skill:react",
+            "label": "React",
+            "category": "skill",
+            "priority": "required",
+            "matched": true,
+            "jobEvidence": "Required: 5+ years building distributed web applications with TypeScript, React, and Node.js.",
+            "resumeEvidence": [
+              "Full Stack Engineer with 6+ years of experience designing scalable web applications, distributed systems, and modern cloud architectures using React, Next.js, TypeScript, and Node.js. Track record of improving system latency by 35% and lead",
+              "Spearheaded redesign of flagship customer portal with Next.js and React, driving a 28% increase in conversion and 400ms reduction in LCP."
+            ],
+            "explanation": "Found explicit resume evidence for react."
+          },
+          {
+            "id": "skill:nodejs",
+            "label": "Node.js",
+            "category": "skill",
+            "priority": "required",
+            "matched": true,
+            "jobEvidence": "Required: 5+ years building distributed web applications with TypeScript, React, and Node.js.",
+            "resumeEvidence": [
+              "Full Stack Engineer with 6+ years of experience designing scalable web applications, distributed systems, and modern cloud architectures using React, Next.js, TypeScript, and Node.js. Track record of improving system latency by 35% and lead",
+              "Architected high-throughput data processing services using TypeScript, Node.js, and PostgreSQL handling 2M+ daily requests."
+            ],
+            "explanation": "Found explicit resume evidence for node.js."
+          },
+          {
+            "id": "skill:postgresql",
+            "label": "PostgreSQL",
+            "category": "skill",
+            "priority": "unspecified",
+            "matched": true,
+            "jobEvidence": "Experience with PostgreSQL, AWS, and modern CI/CD.",
+            "resumeEvidence": [
+              "Architected high-throughput data processing services using TypeScript, Node.js, and PostgreSQL handling 2M+ daily requests.",
+              "PostgreSQL"
+            ],
+            "explanation": "Found explicit resume evidence for postgresql."
+          },
+          {
+            "id": "skill:aws",
+            "label": "AWS",
+            "category": "skill",
+            "priority": "unspecified",
+            "matched": true,
+            "jobEvidence": "Experience with PostgreSQL, AWS, and modern CI/CD.",
+            "resumeEvidence": [
+              "AWS",
+              "AWS Certified Solutions Architect – Associate Amazon Web Services"
+            ],
+            "explanation": "Found explicit resume evidence for aws."
+          },
+          {
+            "id": "skill:cicd",
+            "label": "CI/CD",
+            "category": "skill",
+            "priority": "unspecified",
+            "matched": true,
+            "jobEvidence": "Experience with PostgreSQL, AWS, and modern CI/CD.",
+            "resumeEvidence": [
+              "Integrated automated testing and CI/CD pipelines with GitHub Actions, reducing release cycle time by 45% across 5 teams.",
+              "CI/CD"
+            ],
+            "explanation": "Found explicit resume evidence for ci/cd."
+          },
+          {
+            "id": "experience:leadership",
+            "label": "Leadership",
+            "category": "experience",
+            "priority": "unspecified",
+            "matched": true,
+            "jobEvidence": "We are seeking an experienced Lead Full Stack Engineer to build world-class developer experiences.",
+            "resumeEvidence": [
+              "Mentored 6 junior and mid-level engineers through code reviews, architectural RFCs, and engineering brown bags."
+            ],
+            "explanation": "Found explicit resume evidence for leadership."
+          }
+        ],
+        "missingTerms": [],
+        "risks": [],
+        "recommendations": [],
+        "disclaimer": "This deterministic compatibility estimate is based on visible text and structured fields. It is not an employer ATS result, an interview prediction, or a hiring decision."
+      },
+      "optimization_proposals": {
+        "proposals": [
+          {
+            "id": "prop-1",
+            "target": {
+              "section": "summary",
+              "experienceId": null,
+              "bulletIndex": null
+            },
+            "original": "Full Stack Engineer with 6+ years of experience designing scalable web applications, distributed systems, and modern cloud architectures using React, Next.js, TypeScript, and Node.js. Track record of improving system latency by 35% and leading cross-functional engineering pods.",
+            "revised": "Lead Full Stack Engineer with 6+ years of experience designing high-scale distributed systems, system architectures, and modern cloud platforms using React, Next.js, TypeScript, and Node.js. Track record of improving system latency by 35% and mentoring engineering pods.",
+            "rationale": "Aligns executive summary with target 'Lead Full Stack Engineer' title and highlights system design expertise.",
+            "supportingEvidence": [
+              "Extracted from candidate background in distributed systems and pod leadership."
+            ],
+            "requiresUserConfirmation": true
+          },
+          {
+            "id": "prop-2",
+            "target": {
+              "section": "experienceBullet",
+              "experienceId": "exp-1",
+              "bulletIndex": 0
+            },
+            "original": "Architected high-throughput data processing services using TypeScript, Node.js, and PostgreSQL handling 2M+ daily requests.",
+            "revised": "Led system design and implementation of high-throughput data processing microservices using TypeScript, Node.js, and PostgreSQL, reliably handling 2M+ daily requests with 99.99% uptime.",
+            "rationale": "Explicitly introduces 'system design' keyword and highlights reliability outcomes.",
+            "supportingEvidence": [
+              "Apex Cloud Technologies work experience."
+            ],
+            "requiresUserConfirmation": true
+          }
+        ],
+        "caveats": [
+          "Review each edit to ensure it accurately reflects your actual responsibilities.",
+          "Changes will only be applied to a tailored copy, preserving your master resume."
+        ]
+      },
+      "created_at": "2026-10-16T18:28:06.759Z"
+    }
+  ]
+}
